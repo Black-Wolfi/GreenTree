@@ -1,0 +1,45 @@
+# Dependencies
+/vendor/
+/node_modules/
+
+# Environment
+.env
+.env.*
+!.env.example
+
+# Laravel runtime storage (НЕ коммитится, кроме структуры)
+storage/logs/*
+storage/framework/cache/*
+storage/framework/sessions/*
+storage/framework/views/*
+storage/*.key
+!storage/framework/.gitignore
+!storage/logs/.gitignore
+
+# Bootstrap cache (важно: только cache, не вся папка)
+/bootstrap/cache/*
+!/bootstrap/cache/.gitignore
+
+# Tests cache
+.phpunit.result.cache
+
+# IDE
+.vscode/
+.idea/
+.phpstorm.meta.php
+/.fleet
+/.nova
+/.zed
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+npm-debug.log*
+yarn-error.log*
+
+# Misc
+auth.json
+.osp
